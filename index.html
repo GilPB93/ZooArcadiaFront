@@ -2,26 +2,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="scss/main.scss"> 
+    <link rel="stylesheet" href="scss/main.css"> 
 
     <title>Zoo Arcadia</title>
 </head>
 
 <body>
     <header>
-
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo rounded" src="/images/logo.png" alt="logo">
+                  </a> 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="headercontent collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">                    
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Accueil</a>    
+                  </li>                                      
+                  <li class="nav-item dropdown"> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Habitat</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Marais</a></li>
+                      <li><a class="dropdown-item" href="#">Savane</a></li>
+                      <li><a class="dropdown-item" href="#">Jungle</a></li>
+                    </ul>
+                  </li>                    
+                  <li class="nav-item">
+                      <a class="nav-link" href="/">Galerie</a>
+                  </li>           
+                  <li class="nav-item">
+                  <a class="nav-link" href="/">Contact</a>
+                  </li>            
+                  <li class="nav-item">
+                      <a class="nav-link" href="/">Connexion</a>
+                  </li> 
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
 
-    <body id="main-page">
+    <main id="main-page">
         <!--Le contenu de la page sera injectée ici-->
         
-    </body>
+    </main>
 
 
-    <footer>
-
+    <footer class="bg-primary text-white text-center footer" >
+        <div class="row container-fluid">
+            <div class="col-12 col-lg-4">
+                <h3>Ouverts tous les jours</h3>
+                    <p>De 09h00 à 20h00</p>
+            </div>
+            <div class="col-6 col-lg-4">
+                <p>Adresse </br>
+                01 00 00 00 00</p> 
+            </div>
+            <div class="col-6 col-lg-4">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="/">Accueil</a>
+                    </li>                                      
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Habitats</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Contact</a>
+                    </li>           
+                  </ul>
+            </div>
+            
+        </div>
     </footer>
 
     <script type="module" src="Router/Router.js"></script>
