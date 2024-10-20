@@ -51,3 +51,38 @@ footer.footer{
     text-align: justify;
 }
 
+.hero-scene-connection{
+    position: relative;
+    margin-bottom: 15px;  // cette marge permet de créer un espace après cette zone pour aérer la site
+    &::before{		// zone relative à l’image en background
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image: url(../images/elef.png);	// changer le lien de l’image
+        background-size: cover;
+        filter: brightness(0.3);
+    }
+
+    *{
+        //Positionner les éléments devant le ::before
+        position:relative;
+    }
+
+    .hero-scene-connection-content{		// zone relative au contenu écrit du bigtitle
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.messagewarning{
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}

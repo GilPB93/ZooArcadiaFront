@@ -12008,4 +12008,37 @@ footer.footer {
 
 .text-justify {
   text-align: justify;
+}
+
+.hero-scene-connection {
+  position: relative;
+  margin-bottom: 15px;
+}
+.hero-scene-connection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/elef.png);
+  background-size: cover;
+  filter: brightness(0.3);
+}
+.hero-scene-connection * {
+  position: relative;
+}
+.hero-scene-connection .hero-scene-connection-content {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.messagewarning {
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
