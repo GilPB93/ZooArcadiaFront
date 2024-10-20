@@ -11981,10 +11981,31 @@ footer.footer {
   width: 100%;
 }
 
-.logo {
-  height: 200px;
-  width: 200px;
-  z-index: 7;
+.hero-scene {
+  position: relative;
+  margin-bottom: 15px;
+}
+.hero-scene::before {
+  content: "";
   position: absolute;
-  transform: translate(0%, -20%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/elef.png);
+  background-size: cover;
+}
+.hero-scene * {
+  position: relative;
+}
+.hero-scene .hero-scene-content {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-justify {
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */
