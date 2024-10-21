@@ -1,0 +1,40 @@
+<div class="hero-scene-connection text-center text-white"> 
+    <div class="hero-scene-connection-content"> 
+        <h1>Contact</h1>
+    </div>
+</div>
+
+<section class="contactbox container bg-info rounded">
+    <div> <!--div box-->
+        <p class="text-center">Vous avez une question ou besoin d'informations supplémentaires ? Nous sommes là pour vous aider ! </br>
+            Remplissez le formulaire ci-dessous et nous reviendrons vers vous dans les plus brefs délais.</p>
+    </div>
+
+    <form>
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col mb-3">
+                <label for="NomInput" class="form-label">Nom* :</label>
+                <input type="text" class="form-control" id="NomInput" placeholder="Indiquez ici votre nom..." name="Nom">
+            </div>
+            <div class="col mb-3">
+                <label for="EmailInput" class="form-label">Email* :</label>
+                <input type="email" class="form-control" id="EmailInput" placeholder="exemple@email.com" name="Email">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="TitreInput" class="form-label">Titre* :</label>
+            <input type="text" class="form-control" id="TitreInput" placeholder="Indiquez ici le titre de votre message..." name="Titre">
+        </div>
+        <div>
+            <label for="Textarea" class="form-label">Votre message* :</label>
+            <textarea class="form-control" id="Textarea" rows="3"></textarea>
+        </div>
+        <p>* Champs obligatoires </p>  
+    </form>
+    <div class="row row-cols-1 row-cols-lg-2 text-center">
+        <p>Date : JJ/MM/AAAA, hh:mm</p> <!--add timeline here-->
+        <div class="buttonconnection text-center">
+            <button type="submit" class="btn btn-secondary">Envoyer votre message</button>
+        </div>
+    </div>
+</section>

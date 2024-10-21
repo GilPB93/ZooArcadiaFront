@@ -44,12 +44,28 @@
                 </div>
             </div>
     </article>
-    <article>
-        </div><div class="container p-4"> 
-            <h2 class="text-center text-primary">Avis</h2>
-            <div class="row row-cols-3 align-items-center"> 
-                <!--add comments zone-->
-            </div>
+    <form class="container p-4">
+        <div>
+            <h2 class="text-center text-primary">Votre avis</h2>
+            <p class="text-center"> Laissez-nous votre avis sur votre visite et profitez pour voir tous les avis qui nous ont été laissé par de précédents visiteurs.</br>
+                Pour toute prise de contact nous vous prions de bien vouloir remplir le formulaire dans l’onglet “Contact” (en haut de la page).
+            </p>
         </div>
-    </article>
+        <div class="col mb-3">
+            <label for="NomInput" class="form-label">Pseudo* :</label>
+            <input type="text" class="form-control" id="NomInput" placeholder="Indiquez ici votre pseudo..." name="Nom">
+        </div>
+        <div>
+            <label for="Textarea" class="form-label">Votre avis* :</label>
+            <textarea class="form-control" id="Textarea" rows="3"></textarea>
+        </div>
+        <p>* Champs obligatoires </p> 
+        <div class="buttonconnection text-center">
+            <button type="submit" class="btn btn-secondary">Soumettre</button>
+        </div>
+    </form>
+</section>
+
+<section>
+    <!--ajouter un carrousel d'avis-->
 </section>

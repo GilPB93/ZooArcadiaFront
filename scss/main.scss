@@ -20,24 +20,23 @@ footer.footer{
 
 .hero-scene{
     position: relative;
-    margin-bottom: 15px;  // cette marge permet de créer un espace après cette zone pour aérer la site
-    &::before{		// zone relative à l’image en background
+    margin-bottom: 15px;  
+    &::before{		
         content:"";
         position: absolute;
         top:0;
         left:0;
         width:100%;
         height:100%;
-        background-image: url(../images/elef.png);	// changer le lien de l’image
+        background-image: url(../images/elef.png);
         background-size: cover;
     }
 
     *{
-        //Positionner les éléments devant le ::before
         position:relative;
     }
 
-    .hero-scene-content{		// zone relative au contenu écrit du bigtitle
+    .hero-scene-content{		
         height: 500px;
         display: flex;
         flex-direction: column;
@@ -88,4 +87,8 @@ footer.footer{
 
 .buttonconnection{
     padding-bottom: 15px;
+}
+
+.contactbox{
+    padding: 15px;
 }
