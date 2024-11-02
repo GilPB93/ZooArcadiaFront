@@ -1,1 +1,20 @@
 @import 'custom';
+
+html {
+  font-size: 20px;
+  position: relative;
+    min-height: 100%;
+}
+
+header {
+  background-color: primary;
+}
+
+footer {
+  background-color: primary;
+}
+
+.navbar {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
