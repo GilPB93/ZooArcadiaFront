@@ -11995,4 +11995,8 @@ footer.footer {
 h4, .h4 {
   font-size: 0.8rem;
   font-family: "Work Sans", sans-serif;
+}
+
+.navbar-toggler {
+  background-color: #FFC72C;
 }/*# sourceMappingURL=main.css.map */
