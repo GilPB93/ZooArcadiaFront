@@ -1,18 +1,19 @@
 @import 'custom';
 
-html {
-    font-size: 20px;
-    position: relative;
-    min-height: 100%;
+body, html, main {
+    font-size: 18px;
+    background-color: $base;
+    margin: 0;
+    padding: 0;
+    flex: 1;
 }
 
 header {
+    position: relative;
     background-color: $primary;
 }
 
-main {
-    background-color: $base;
-}
+
 
 footer.footer {
     padding: 15px;
@@ -34,6 +35,35 @@ h4 {
     font-family: 'Work Sans', sans-serif;
 }
 
-.navbar-toggler, .span {
+.navbar-toggler {
     background-color: $secondary1;
+}
+
+
+.image-container{
+    position: relative;
+    margin-bottom: 15px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-image: url('../media/img/bandeau/zebre1.jpg');
+        background-size: cover;
+        opacity: 0.5;
+    }
+    *{
+        position: relative;
+    }
+    
+    .image-container-content{
+        height: 500px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

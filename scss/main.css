@@ -11965,18 +11965,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  font-size: 20px;
-  position: relative;
-  min-height: 100%;
+body, html, main {
+  font-size: 18px;
+  background-color: #FFFAF2;
+  margin: 0;
+  padding: 0;
+  flex: 1;
 }
 
 header {
+  position: relative;
   background-color: #9CA3B2;
-}
-
-main {
-  background-color: #FFFAF2;
 }
 
 footer.footer {
@@ -11999,4 +11998,31 @@ h4, .h4 {
 
 .navbar-toggler {
   background-color: #FFC72C;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../media/img/bandeau/zebre1.jpg");
+  background-size: cover;
+  opacity: 0.5;
+}
+.image-container * {
+  position: relative;
+}
+.image-container .image-container-content {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
