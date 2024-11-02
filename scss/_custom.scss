@@ -1,0 +1,21 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary: #9CA3B2;
+$secondary1: #FFC72C; 
+$secondary2: #FFE08F;
+$neutral1: #F8E4DA;
+$neutral2: #D3DEC9;
+$neutral3: #F2CFC2;
+$accent: #F28A30;
+$danger: #DC4C64;
+$base: #FFFAF2;
+
+$font-family-title: 'Rammetto One', sans-serif;
+$font-family-text: 'Work Sans', sans-serif;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
