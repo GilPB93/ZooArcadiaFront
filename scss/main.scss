@@ -1,91 +1,73 @@
 @import 'custom';
 
-body, html, main {
-    font-size: 18px;
-    background-color: $base;
-    margin: 0;
-    padding: 0;
-    flex: 1;
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ensure the body takes the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Remove default margin */
 }
 
 header {
-    position: relative;
-    background-color: $primary;
+  font-size: 1em;
+  font-family: $font-family-title;
+  top: 0;
+  position: relative;
 }
 
-
-
-footer.footer {
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: $primary;
+footer {
+  font-size: 1em;
+  font-family: $font-family-title;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto; /* Push the footer to the bottom */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+ 
 }
 
-
-.navbar {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
+.footer-content {
+  text-align: center;
 }
 
-h1{
-    font-family: 'Rammetto One', sans-serif;
-    font-size: 2.5rem;
-    color:black;
-}
-
-h2{
-    font-family: 'Rammetto One', sans-serif;
-    font-size: 2rem;
-    color:black !important;
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 h4 {
-    font-size: 0.8rem;
-    font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-title;
+  font-size: 0.8rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.navbar-toggler {
-    background-color: $secondary1;
+.navbar .container-fluid {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
-
-.image-container{
-    position: relative;
-    margin-bottom: 15px;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-image: url('../img/bandeau/zebre1.jpg');
-        background-size: cover;
-        opacity: 0.5;
-    }
-    *{
-        position: relative;
-    }
-    
-    .image-container-content{
-        height: 500px;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.navbar-brand {
+  margin-right: auto; /* Pushes the brand to the left */
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  border-radius: 10px;
 }
 
-.text-justify{	
-    text-align: justify;
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  flex-grow: 1; /* Allow the nav items to take up remaining space */
+  padding-right: 80px;
 }
 
-.btn-primary {
-    background-color: $secondary1;
+.nav-item {
+  margin: 0 10px; /* Optional: Add some spacing between nav items */
 }
-
-
-
