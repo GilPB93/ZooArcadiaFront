@@ -545,10 +545,17 @@ legend + * {
 
 [type=search] {
   -webkit-appearance: textfield;
-  appearance: textfield;
   outline-offset: -2px;
 }
 
+/* rtl:raw:
+[type="tel"],
+[type="url"],
+[type="email"],
+[type="number"] {
+  direction: ltr;
+}
+*/
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -3574,10 +3581,24 @@ textarea.form-control-lg {
   vertical-align: 0.255em;
   content: "";
 }
+.dropstart .dropdown-toggle::after {
+  display: none;
+}
+.dropstart .dropdown-toggle::before {
+  display: inline-block;
+  margin-right: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-right: 0.3em solid;
+  border-bottom: 0.3em solid transparent;
+}
 .dropstart .dropdown-toggle:empty::after {
   margin-left: 0;
 }
-
+.dropstart .dropdown-toggle::before {
+  vertical-align: 0;
+}
 
 .dropdown-divider {
   height: 0;
@@ -12703,4 +12724,34 @@ footer h4, footer .h4 {
 
 .button-marais:hover, .button-savane:hover, .button-jungle:hover {
   background-color: #F28A30;
+}
+
+.bigtitle-img-marais {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../image/habitats/marais.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-savane {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../image/habitats/savane.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-jungle {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../image/habitats/jungle.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
 }/*# sourceMappingURL=main.css.map */

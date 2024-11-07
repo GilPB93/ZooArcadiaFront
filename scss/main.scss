@@ -719,3 +719,33 @@ footer h4{
 .button-marais:hover, .button-savane:hover, .button-jungle:hover {
   background-color: $accent;
 }
+
+.bigtitle-img-marais {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url('../image/habitats/marais.jpg'); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-savane {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url('../image/habitats/savane.jpg'); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-jungle {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url('../image/habitats/jungle.jpg'); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
