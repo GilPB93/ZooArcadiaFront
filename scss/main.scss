@@ -68,13 +68,17 @@ h2{
 h4 {
   font-family: $font-family-title;
   font-size: 0.8rem;
-  padding-top: 15px;
-  padding-bottom: 15px;
+
 }
 
 p {
   font-family: $font-family-text;
   font-size: 0.95rem;
+}
+
+footer h4{
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .error404{
@@ -134,7 +138,7 @@ p {
   margin: 0 10px; /* Optional: Add some spacing between nav items */
 }
 
-.responsive-container1, .responsive-container2, .responsive-container3, .card-services {
+.responsive-container1, .responsive-container2, .responsive-container3, .card-services, .card-habitats {
   max-width: 1440px;
   margin-bottom: 3px;
   margin-left: 5px;
@@ -256,6 +260,7 @@ p {
   background-color: $secondary;
   border-radius: 10px;
   font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 .card3-back button:hover {
   background-color: $accent;
@@ -367,6 +372,7 @@ p {
   border-radius: 10px;
   font-family: 'Raleway', sans-serif;
   border: 1;
+  font-weight: bold;
 }
 .card6-back button:hover {
   background-color: $accent;
@@ -463,7 +469,7 @@ p {
   margin: 3px;
   position: relative;
 }
-.bigtitle-img {
+.bigtitle-img-services {
   width: 100%; /* Cover the full width of .bigtitle */
   height: 100%; /* Cover the full height of .bigtitle */
   background-size: cover; /* Ensure the image covers the entire card */
@@ -486,7 +492,7 @@ p {
 }
 
 
-.card-services{
+.card-services, .card-habitats{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -600,3 +606,116 @@ p {
   font-style: italic;
 }
 
+.bigtitle-img-habitats {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url('../image/habitats/bande-jaguar.jpg'); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.card-marais{
+  position: relative;
+  margin: 10px;
+  background-color: $neutral4;
+  width: 370px;
+  height: 590px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.card-marais-img{
+  position: relative;
+  width: 350px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 3px auto;
+  background-image: url('../image/habitats/marais.jpg'); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+.card-marais-text{
+  width: 350px;
+  margin: 3px auto;
+}
+
+.card-savane{
+  position: relative;
+  margin: 10px;
+  background-color: $neutral1;
+  width: 370px;
+  height: 590px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.card-savane-img{
+  position: relative;
+  width: 350px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 3px auto;
+  background-image: url('../image/habitats/savane.jpg'); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+.card-savane-text{
+  width: 350px;
+  margin: 3px auto;
+}
+
+.card-jungle{
+  position: relative;
+  margin: 10px;
+  background-color: $neutral2;
+  width: 370px;
+  height: 590px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.card-jungle-img{
+  position: relative;
+  width: 350px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 3px auto;
+  background-image: url('../image/habitats/jungle.jpg'); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+.card-jungle-text{
+  width: 350px;
+  margin: 3px auto;
+}
+
+.card-marais:hover, .card-savane:hover, .card-jungle:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+.button-marais, .button-savane, .button-jungle{
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3px;
+  font-weight: bold;
+  border: 1;
+}
+
+.button-marais:hover, .button-savane:hover, .button-jungle:hover {
+  background-color: $accent;
+}
