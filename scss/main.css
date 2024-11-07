@@ -11967,8 +11967,8 @@ textarea.form-control-lg {
 }
 html, body {
   position: relative;
-  width: 100%;
-  height: 100%; /* Ensure the body takes the full height of the viewport */
+  width: 100vw;
+  height: 100vh; /* Ensure the body takes the full height of the viewport */
   display: flex;
   flex-direction: column;
   margin: 0; /* Remove default margin */
@@ -11998,10 +11998,10 @@ footer {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  width: 100%;
+  align-content: center;
+  width: 100vw;
   max-width: 1440px;
   margin: 0 auto;
-  align-content: center;
 }
 
 .footer-content {
@@ -12043,6 +12043,36 @@ p {
   font-size: 0.95rem;
 }
 
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.error404 h1, .error404 .h1 {
+  font-family: "LEMON MILK", sans-serif;
+  font-size: 2rem;
+}
+
+.error404 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+}
+
+.error404 footer {
+  position: relative !important;
+  margin-top: auto;
+}
+
+.error404 button:hover {
+  background-color: #F28A30;
+}
+
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -12055,6 +12085,7 @@ p {
 
 .navbar-brand {
   margin-right: auto; /* Pushes the brand to the left */
+  margin-left: 10px;
   width: 60px;
   height: 60px;
   padding: 0;
@@ -12383,7 +12414,7 @@ p {
 }
 
 .card10-img-a {
-  height: 140px;
+  height: 139px;
   position: relative;
   border-radius: 10px;
   background-image: url("../image/img-cards/card10a.jpg"); /* Path to your front image */
@@ -12393,7 +12424,7 @@ p {
 }
 
 .card10-img-b {
-  height: 140px;
+  height: 139px;
   position: relative;
   top: 5px; /* Position under the header */
   border-radius: 10px;
