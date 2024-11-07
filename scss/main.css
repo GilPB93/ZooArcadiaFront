@@ -11989,19 +11989,18 @@ header {
   align-content: center;
 }
 
-footer {
+footer.footer {
   height: 77px;
   font-size: 1em;
   font-family: "LEMON MILK", sans-serif;
+  margin: 15px;
   position: relative;
   bottom: 0;
+  width: 100%;
+  max-width: 1440px;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  align-content: center;
-  width: 100vw;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .footer-content {
@@ -12103,7 +12102,7 @@ p {
   margin: 0 10px; /* Optional: Add some spacing between nav items */
 }
 
-.responsive-container1, .responsive-container2, .responsive-container3 {
+.responsive-container1, .responsive-container2, .responsive-container3, .card-services {
   max-width: 1440px;
   margin-bottom: 3px;
   margin-left: 5px;
@@ -12111,6 +12110,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  align-content: center;
 }
 
 .card1 {
@@ -12447,4 +12447,156 @@ p {
   border-radius: 10px;
   transition: transform 0.3s;
   background-color: #627D4B;
+}
+
+.bigtitle {
+  width: 100vw; /* Full width of the viewport */
+  height: 210px;
+  top: 0;
+  margin: 3px;
+  position: relative;
+}
+
+.bigtitle-img {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../image/services/bande-zebre.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-content {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.card-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card-restaurant {
+  position: relative;
+  margin: 10px;
+  background-color: #C9643B;
+  width: 340px;
+  height: 550px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-restaurant-img {
+  position: relative;
+  width: 310px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  background-image: url("../image/services/restaurant.jpg"); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+.card-restaurant-text {
+  width: 310px;
+  margin: 5px auto;
+}
+
+.card-visite {
+  position: relative;
+  margin: 10px;
+  background-color: #627D4B;
+  width: 340px;
+  height: 550px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-visite-img {
+  position: relative;
+  width: 310px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  background-image: url("../image/services/visite.jpg"); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+.card-visite-text {
+  width: 310px;
+  margin: 5px auto;
+}
+
+.card-train {
+  position: relative;
+  margin: 10px;
+  background-color: #F2CFC2;
+  width: 340px;
+  height: 550px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-train-img {
+  position: relative;
+  width: 310px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  background-image: url("../image/services/petit-train.jpg"); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+.card-train-text {
+  width: 310px;
+  margin: 5px auto;
+}
+
+.card-restaurant:hover, .card-train:hover, .card-visite:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+.info-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.info-services-text {
+  width: 100%;
+  margin: 5px auto;
+  padding: 10px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
 }/*# sourceMappingURL=main.css.map */
