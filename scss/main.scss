@@ -7,6 +7,9 @@ html, body {
   display: flex;
   flex-direction: column;
   margin: 0; /* Remove default margin */
+  background-color: $primary;
+  align-content: center;
+  align-items: center;
 }
 
 header {
@@ -14,19 +17,26 @@ header {
   font-family: $font-family-title;
   top: 0;
   position: relative;
+  height: 80px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-content: center;
 }
 
 footer {
+  height: 77px;
   font-size: 1em;
   font-family: $font-family-title;
   position: relative;
   bottom: 0;
-  width: 100%;
-  margin-top: auto; /* Push the footer to the bottom */
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
- 
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-content: center;
 }
 
 .footer-content {
@@ -40,11 +50,33 @@ footer {
   margin-right: 0px;
 }
 
+
+.main-content {
+  flex: 1; /* Take up remaining space between header and footer */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+h1{
+  font-family: $font-family-title;
+  font-size: 1.7rem;
+}
+
+h2{
+  font-family: $font-family-title;
+  font-size: 1.3rem;
+}
+
 h4 {
   font-family: $font-family-title;
   font-size: 0.8rem;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+p {
+  font-family: $font-family-text;
+  font-size: 0.95rem;
 }
 
 .navbar .container-fluid {
@@ -53,10 +85,14 @@ h4 {
   align-items: center; /* Center vertically */
 }
 
+.navbar{
+  padding-bottom: 0;
+}
+
 .navbar-brand {
   margin-right: auto; /* Pushes the brand to the left */
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   padding: 0;
   border-radius: 10px;
 }
@@ -65,9 +101,334 @@ h4 {
   display: flex;
   justify-content: center; /* Center horizontally */
   flex-grow: 1; /* Allow the nav items to take up remaining space */
-  padding-right: 80px;
+  padding-right: 60px;
 }
 
 .nav-item {
   margin: 0 10px; /* Optional: Add some spacing between nav items */
 }
+
+.responsive-container1, .responsive-container2, .responsive-container3 {
+  max-width: 1440px;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+// CARD 1
+.card1 {
+  width: 627px;
+  height: 280px;
+  margin: 3px;
+  position: relative;
+  border-radius: 10px;
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url('../image/img-cards/card1.jpg'); /* Path to your front image */
+  transition: transform 0.3s;
+  padding: 0;
+}
+.card1:hover {
+  transform: scale(1.03); /* Zoom in slightly on hover */
+}
+.welcome-zoo {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  margin: 5px; /* Remove default margin */
+}
+.text-welcome-justify{
+  position: relative;
+  text-align: left;
+  height: 220px;
+  width: 275px;
+  bottom: 0;
+  right: 0;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  margin: 5px;
+  font-weight: 500;
+}
+
+// CARD 2
+.card2 {
+  position: relative;
+  width: 150px;
+  height: 280px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  margin: 3px;
+  background-image: url('../image/img-cards/card2.jpg'); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+  padding: 0;
+}
+.card2:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+// CARD 3
+.card3 {
+  position: relative;
+  margin: 3px; 
+  width: 400px;
+  height: 280px;
+  padding: 0;
+}
+.card3-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+}
+.card3-front, .card3-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.card3-front {
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.6s;
+  background-image: url('../image/img-cards/card3.jpg');
+}
+.card3-back {
+  background-size: cover;
+  background-position: center;
+  background-color: $neutral1; //check color
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.card3:hover .card3-front {
+  filter: blur(5px);
+}
+.card3:hover .card3-back {
+  opacity: 1;
+}
+.card3-back h2, .card3-front h2 {
+  padding-top: 5px;
+}
+.card3-back p{
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+.card3-back button {
+  background-color: $secondary;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+.card3-back button:hover {
+  background-color: $accent;
+}
+
+// CARD 4
+.card4{
+  padding: 0;
+  margin: 3px;
+  width: 190px;
+}
+.card4-img-a {
+  height: 140px;
+  position: relative;
+  border-radius: 10px;
+  background-image: url('../image/img-cards/card4a.jpg'); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+  transition: transform 0.3s;
+}
+.card4-img-b {
+  height: 140px;
+  position: relative;
+  top: 5px; /* Position under the header */
+  border-radius: 10px;
+  background-image: url('../image/img-cards/card4b.jpg'); /* Path to your back image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+  transition: transform 0.3s;
+}
+.card4-img-a:hover, .card4-img-b:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+// CARD 5
+.card5 {
+  position: relative;
+  width: 150px;
+  height: 280px;
+  padding: 0;
+  margin: 3px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  background-image: url('../image/img-cards/card5.jpg'); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+.card5:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+// CARD 6
+.card6 {
+  position: relative;
+  margin: 3px; 
+  width: 590px;
+  height: 280px;
+  padding: 0;
+}
+.card6-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.card6-front, .card6-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.card6-front {
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.6s;
+  background-image: url('../image/img-cards/card6.jpg');
+}
+.card6-back {
+  background-size: cover;
+  background-position: center;
+  background-color: $neutral3; //check color
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.card6:hover .card6-front {
+  filter: blur(5px);
+}
+.card6:hover .card6-back {
+  opacity: 1;
+}
+.card6-back h2, .card6-front h2 {
+  padding-top: 5px;
+  color: black;
+}
+.card6-back p{
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  color: black;
+}
+.card6-back button {
+  background-color: $secondary;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  border: 1;
+}
+.card6-back button:hover {
+  background-color: $accent;
+}
+// CARD 7
+.card7 {
+  position: relative;
+  width: 150px;
+  height: 280px;
+  padding: 0;
+  margin: 3px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  background-image: url('../image/img-cards/card7.jpg'); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+.card7:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+// CARD 8
+.card8 {
+  position: relative;
+  width: 480px;
+  height: 280px;
+  padding: 0;
+  margin: 3px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  background-image: url('../image/img-cards/card8.jpg'); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+.card8:hover {
+  transform: scale(1.03); /* Zoom in slightly on hover */
+}
+
+// CARD 9
+.card9 {
+  position: relative;
+  width: 503px;
+  height: 280px;
+  padding: 0;
+  margin: 3px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  background-color: $neutral2;
+}
+
+// CARD 10
+.card10{
+  padding: 0;
+  margin: 3px;
+  width: 190px;
+}
+.card10-img-a {
+  height: 140px;
+  position: relative;
+  border-radius: 10px;
+  background-image: url('../image/img-cards/card10a.jpg'); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+  transition: transform 0.3s;
+}
+.card10-img-b {
+  height: 140px;
+  position: relative;
+  top: 5px; /* Position under the header */
+  border-radius: 10px;
+  background-image: url('../image/img-cards/card10b.jpg'); /* Path to your back image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+  transition: transform 0.3s;
+}
+.card10-img-a:hover, .card10-img-b:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+// CARD 11 
+.card11 {
+  position: relative; 
+  width: 700px;
+  height: 280px;
+  padding: 0;
+  margin: 3px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  background-color: $neutral1;
+}
+
+
+
+
