@@ -139,8 +139,7 @@ footer h4{
 .marais-description, .marais-content,
 .savane-description, .savane-content, 
 .jungle-description, .jungle-content,
-.contact-form  
-{
+.contact-form, .connexion-form {
   max-width: 1440px;
   margin-bottom: 3px;
   margin-left: 5px;
@@ -864,7 +863,7 @@ footer h4{
 }
 
 
-.contact-form {
+.contact-form, .connexion-form {
   position: relative;
   top: 0;
   display: flex;
@@ -878,7 +877,7 @@ footer h4{
   margin: auto;
 }
 
-.contact-name, .contact-email, .contact-message {
+.contact-name,.contact-title, .contact-email, .contact-message {
   margin: 10px;
 }
 
@@ -916,4 +915,45 @@ footer h4{
   max-width: 900px;
   margin: auto;
   width: 100%;
+}
+
+.bigtitle-img-connexion {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url('../image/logo/bande-elef.jpg'); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+.connexion-submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+}
+.connexion-submit button {
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin: 10px;
+}
+.connexion-submit button:hover {
+  background-color: $accent;
+}
+
+.connexion-email {
+  margin: 10px;
+}
+.connexion-password {
+  margin: 10px;
+  margin-top: 40px;
+}
+
+.connexion-form{
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly
 }
