@@ -138,7 +138,8 @@ footer h4{
 .card-services, .card-habitats, 
 .marais-description, .marais-content,
 .savane-description, .savane-content, 
-.jungle-description, .jungle-content  
+.jungle-description, .jungle-content,
+.contact-form  
 {
   max-width: 1440px;
   margin-bottom: 3px;
@@ -754,7 +755,6 @@ footer h4{
   position: absolute;
 }
 
-
 .marais-description, .savane-description, .jungle-description{
   display: flex;
   justify-content: center;
@@ -851,4 +851,69 @@ footer h4{
 
 .modal-body h3 {
   font-style: italic;
+}
+
+.bigtitle-img-contact {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url('../image/logo/bande-tucan.jpg'); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+
+.contact-form {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.contact-name, .contact-email, .contact-message {
+  margin: 10px;
+}
+
+.form-label {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+}
+.contact-submit button {
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin: 10px;
+}
+.contact-submit button:hover {
+  background-color: $accent;
+}
+
+.bigtitle-text {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
 }
