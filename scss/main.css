@@ -12007,13 +12007,6 @@ footer.footer {
   text-align: center;
 }
 
-.container {
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .main-content {
   flex: 1; /* Take up remaining space between header and footer */
   display: flex;
@@ -12028,6 +12021,11 @@ h1, .h1 {
 h2, .h2 {
   font-family: "LEMON MILK", sans-serif;
   font-size: 1.3rem;
+}
+
+h3, .h3 {
+  font-family: "LEMON MILK", sans-serif;
+  font-size: 1rem;
 }
 
 h4, .h4 {
@@ -12105,7 +12103,11 @@ footer h4, footer .h4 {
   margin: 0 10px; /* Optional: Add some spacing between nav items */
 }
 
-.responsive-container1, .responsive-container2, .responsive-container3, .card-services, .card-habitats {
+.responsive-container1, .responsive-container2, .responsive-container3,
+.card-services, .card-habitats,
+.marais-description, .marais-content,
+.savane-description, .savane-content,
+.jungle-description, .jungle-content {
   max-width: 1440px;
   margin-bottom: 3px;
   margin-left: 5px;
@@ -12498,7 +12500,7 @@ footer h4, footer .h4 {
   margin: 10px;
   background-color: #C9643B;
   width: 340px;
-  height: 550px;
+  height: 570px;
   padding: 0;
   border-radius: 10px;
   transition: transform 0.3s;
@@ -12512,7 +12514,7 @@ footer h4, footer .h4 {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 5px auto;
+  margin: 10px auto;
   background-image: url("../image/services/restaurant.jpg"); /* Path to your front image */
   background-size: cover;
   background-position: center; /* Center the image */
@@ -12528,7 +12530,7 @@ footer h4, footer .h4 {
   margin: 10px;
   background-color: #627D4B;
   width: 340px;
-  height: 550px;
+  height: 570px;
   padding: 0;
   border-radius: 10px;
   transition: transform 0.3s;
@@ -12542,7 +12544,7 @@ footer h4, footer .h4 {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 5px auto;
+  margin: 10px auto;
   background-image: url("../image/services/visite.jpg"); /* Path to your front image */
   background-size: cover;
   background-position: center; /* Center the image */
@@ -12558,7 +12560,7 @@ footer h4, footer .h4 {
   margin: 10px;
   background-color: #F2CFC2;
   width: 340px;
-  height: 550px;
+  height: 570px;
   padding: 0;
   border-radius: 10px;
   transition: transform 0.3s;
@@ -12572,7 +12574,7 @@ footer h4, footer .h4 {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 5px auto;
+  margin: 10px auto;
   background-image: url("../image/services/petit-train.jpg"); /* Path to your front image */
   background-size: cover;
   background-position: center; /* Center the image */
@@ -12593,7 +12595,8 @@ footer h4, footer .h4 {
   align-items: center;
   align-content: center;
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1000px;
+  padding: 10px;
 }
 
 .info-services-text {
@@ -12635,7 +12638,7 @@ footer h4, footer .h4 {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 3px auto;
+  margin: 10px auto;
   background-image: url("../image/habitats/marais.jpg"); /* Path to your front image */
   background-size: cover;
   background-position: center; /* Center the image */
@@ -12665,7 +12668,7 @@ footer h4, footer .h4 {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 3px auto;
+  margin: 10px auto;
   background-image: url("../image/habitats/savane.jpg"); /* Path to your front image */
   background-size: cover;
   background-position: center; /* Center the image */
@@ -12695,7 +12698,7 @@ footer h4, footer .h4 {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 3px auto;
+  margin: 10px auto;
   background-image: url("../image/habitats/jungle.jpg"); /* Path to your front image */
   background-size: cover;
   background-position: center; /* Center the image */
@@ -12754,4 +12757,99 @@ footer h4, footer .h4 {
   background-image: url("../image/habitats/jungle.jpg"); /* Path to your front image */
   padding: 0;
   position: absolute;
+}
+
+.marais-description, .savane-description, .jungle-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1200px;
+}
+
+.marais.marais-description p, .savane.savane-description p, .jungle.jungle-description p {
+  width: 100%;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.marais-content, .savane-content, .jungle-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto;
+  max-width: 1300px;
+  padding: 5px;
+}
+
+.container-marais, .container-savane, .container-jungle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.galerie-card {
+  height: 300px;
+  width: 400px;
+  margin: 5px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galerie-card:hover .titre-image {
+  opacity: 1;
+}
+.galerie-card:hover img {
+  filter: brightness(0.3);
+}
+.galerie-card:hover .btn-animal {
+  display: block;
+}
+.galerie-card img {
+  transition: all 0.2s;
+}
+.galerie-card .titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.galerie-card .btn-animal {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.galerie-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-animal:hover {
+  background-color: #F28A30;
+}
+
+.modal-body p {
+  text-align: justify;
+}
+
+.modal-body h3, .modal-body .h3 {
+  font-style: italic;
 }/*# sourceMappingURL=main.css.map */
