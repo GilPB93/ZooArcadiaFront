@@ -12021,21 +12021,31 @@ h1, .h1 {
 h2, .h2 {
   font-family: "LEMON MILK", sans-serif;
   font-size: 1.3rem;
+  margin: 5px;
 }
 
 h3, .h3 {
   font-family: "LEMON MILK", sans-serif;
   font-size: 1rem;
+  margin: 5px;
 }
 
 h4, .h4 {
   font-family: "LEMON MILK", sans-serif;
   font-size: 0.8rem;
+  margin: 5px;
 }
 
 p {
   font-family: "Raleway", sans-serif;
   font-size: 0.95rem;
+}
+
+button {
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  border: 1;
+  font-weight: bold;
 }
 
 footer h4, footer .h4 {
@@ -12108,7 +12118,8 @@ footer h4, footer .h4 {
 .marais-description, .marais-content,
 .savane-description, .savane-content,
 .jungle-description, .jungle-content,
-.contact-form, .connexion-form {
+.contact-form, .connexion-form,
+.employe-content, .vet-content, .admin-content {
   max-width: 1440px;
   margin-bottom: 3px;
   margin-left: 5px;
@@ -12360,10 +12371,6 @@ footer h4, footer .h4 {
 
 .card6-back button {
   background-color: #FFC72C;
-  border-radius: 10px;
-  font-family: "Raleway", sans-serif;
-  border: 1;
-  font-weight: bold;
 }
 
 .card6-back button:hover {
@@ -12964,4 +12971,131 @@ footer h4, footer .h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.bigtitle-img-vet {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../image/logo/bande-lion.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-admin {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../image/logo/bande-girafe.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-employe {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../image/logo/bande-grenouille.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.employe-content {
+  margin: 10px auto;
+}
+
+.employe-rapport, .employe-avis-service {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  align-content: center;
+  max-width: 705px;
+  width: 100%;
+  margin: 5px;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.employe-rapport {
+  background-color: #C9643B;
+  margin: 5px;
+  padding: 10px;
+}
+
+.form-select-race, .form-select-animal, .form-select-service {
+  margin: 0;
+  font-family: "raleway", sans-serif;
+}
+
+.btn-soumettre-rapport, .btn-soumettre-modif-service {
+  border-radius: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto;
+}
+
+.btn-soumettre-rapport button, .btn-soumettre-modif-service button {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.btn-soumettre-rapport button:hover, .btn-soumettre-modif-service button:hover {
+  background-color: #A8D8EA;
+}
+
+.validation-avis {
+  display: flex;
+  width: 100%;
+  background-color: #627D4B;
+  border-radius: 10px;
+}
+
+.validation-avis-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  align-content: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.modification-services {
+  display: flex;
+  width: 100%;
+  background-color: #A8D8EA;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.modification-services-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  align-content: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.btn-valider, .btn-refuser {
+  border-radius: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

@@ -10,6 +10,9 @@ export const allRoutes = [
     new Route("/marais", "Marais", "/pages/habitat/marais.html"),
     new Route("/savane", "Savane", "/pages/habitat/savane.html"),
     new Route("/jungle", "Jungle", "/pages/habitat/jungle.html"),
+    new Route("/veterinaire", "Espace vétérinaire", "/pages/connexion/vet.html"),
+    new Route("/administrateur", "Espace administrateur", "/pages/connexion/admin.html"),
+    new Route("/employe", "Espace employé", "/pages/connexion/employe.html"),
     
 
 ];
