@@ -42,8 +42,6 @@ footer.footer {
   text-align: center;
 } 
 
-
-
 .main-content {
   flex: 1; /* Take up remaining space between header and footer */
   display: flex;
@@ -54,10 +52,9 @@ h1{
   font-family: $font-family-title;
   font-size: 1.7rem;
 }
-
 h2{
   font-family: $font-family-title;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin: 5px;
 }
 h3{
@@ -150,7 +147,7 @@ footer h4{
 .savane-description, .savane-content, 
 .jungle-description, .jungle-content,
 .contact-form, .connexion-form,
-.employe-content, .vet-content, .admin-content {
+.employe-content, .veterinaire-content {
   max-width: 1440px;
   margin-bottom: 3px;
   margin-left: 5px;
@@ -984,7 +981,10 @@ footer h4{
   position: absolute;
 }
 
-.employe-content {
+.employe-content, .vet-content, .admin-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   margin: 10px auto;
 }
 .employe-rapport, .employe-avis-service {
@@ -992,28 +992,26 @@ footer h4{
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: left;
   align-content: center;
   max-width: 705px;
   width: 100%;
-  margin: 5px;
   height: 100%;
   border-radius: 10px;
-  padding: 0;
+  padding: 10px;
+  margin: 5px;
 }
 .employe-rapport{
   background-color: $neutral2;
-  margin: 5px;
-  padding: 10px;
 }
-
-
+.employe-content h3 {
+  padding: 5px;
+}
 .form-select-race, .form-select-animal, .form-select-service {
   margin: 0;
   font-family: 'raleway', sans-serif;
 }
-
 .btn-soumettre-rapport, .btn-soumettre-modif-service {
   border-radius: 10px;
   width: 150px;
@@ -1023,26 +1021,22 @@ footer h4{
   align-content: center;
   margin: 10px auto;
 }
-
 .btn-soumettre-rapport button, .btn-soumettre-modif-service button {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
-
 .btn-soumettre-rapport button:hover, .btn-soumettre-modif-service button:hover {
   background-color: $neutral3;
 }
 .btn-valider:hover {
   background-color: $accent;
 }
-
 .validation-avis{
   display: flex;
   width: 100%;
   background-color: $neutral1;
   border-radius: 10px;
 }
-
 .validation-avis-content{
   display: flex;
   flex-direction: column;
@@ -1052,7 +1046,6 @@ footer h4{
   margin: 10px;
   width: 100%;
 }
-
 .modification-services{
   display: flex;
   width: 100%;
@@ -1060,7 +1053,6 @@ footer h4{
   border-radius: 10px;
   margin-top: 10px;
 }
-
 .modification-services-content{
   display: flex;
   flex-direction: column;
@@ -1070,7 +1062,6 @@ footer h4{
   margin: 10px;
   width: 100%;
 }
-
 .btn-valider, .btn-refuser{
   border-radius: 10px;
   width: 150px;
@@ -1082,7 +1073,6 @@ footer h4{
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
-
 input[type="text"] {
   font-family: 'raleway', sans-serif;
   font-style: italic;
@@ -1093,8 +1083,58 @@ input[type="text"] {
   align-items: center;
   justify-content: stretch;
 }
-
 .affichage-alimentation label, .affichage-quantité label {
+  font-family: $font-family-title;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.vet-compte-rendu, .vet-rapport-ali {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  align-content: center;
+  max-width: 705px;
+  width: 100%;
+  margin: 5px;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.vet-content h3 {
+  padding: 5px;
+}
+.vet-compte-rendu {
+  background-color: $neutral1;
+}
+ .vet-rapport-ali{
+  background-color: $neutral2;
+}
+.vet-compte-rendu button, .vet-rapport-ali button {
+  border-radius: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  align-content: center;
+  margin: 10px auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+.vet-compte-rendu button:hover {
+  background-color: $neutral2;
+}
+.vet-rapport-ali button:hover {
+  background-color: $neutral3;
+}
+.form-select-race, .form-select-name, .form-select-service, .form-select-date, .form-select-etat-habitat, .form-select-rapport-date {
+  font-family: 'raleway', sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+}
+.affichage-rapport-alimentation label {
   font-family: $font-family-title;
   font-size: 1rem;
   margin: 5px;
