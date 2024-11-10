@@ -2,7 +2,7 @@ import Route from "./Route.js";
 import { allRoutes, websiteName } from "./allRoutes.js";
 
 // Création d'une route pour la page 404 (page introuvable)
-const route404 = new Route("404", "Page introuvable", "/pages/404.html");
+const route404 = new Route("404", "Page introuvable", "/pages/404.html", []);
 
 // Fonction pour récupérer la route correspondant à une URL donnée
 const getRouteByUrl = (url) => {
@@ -34,7 +34,7 @@ const LoadContentPage = async () => {
   // Ajout du contenu JavaScript
   if (actualRoute.pathJS != "") {
     // Création d'une balise script
-    var scriptTag = document.createElement("script");
+    let scriptTag = document.createElement("script");
     scriptTag.setAttribute("type", "text/javascript");
     scriptTag.setAttribute("src", actualRoute.pathJS);
 
@@ -48,7 +48,7 @@ const LoadContentPage = async () => {
 
 // Fonction pour gérer les événements de routage (clic sur les liens)
 const routeEvent = (event) => {
-  event = event || window.event;
+  event.preventDefault();
   event.preventDefault();
   // Mise à jour de l'URL dans l'historique du navigateur
   window.history.pushState({}, "", event.target.href);
