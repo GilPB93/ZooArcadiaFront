@@ -26,23 +26,23 @@
                 </select>
             </h3>
         </div>
-        <div>
-            <h3>Animal :
-                <select class="form-select-animal" aria-label="select animal">
-                    <option selected>Selectionnez le prénom de l'animal souahité</option>
-                    <option value="1">Prénom animal</option>
-                    <option value="2">Prénom animal</option>
-                    <option value="3">Prénom animal</option>
-                </select>
-            </h3>
+        <div class="affichage-alimentation">
+            <label for="alimentationRecommendée">Alimentation Recommandée:</label>
+            <input type="text" class="form-control" id="alimentationRecommendée" rows="1" value="Affichage automatique" readonly>
+            <!--ajouter un affichage atumatique avec les données fournies par le vet-->
+        </div>        
+        <div class="affichage-quantité">
+            <label for="quantiteRecommendée">Quantité Recommandée:</label>
+            <input type="text" class="form-control" id="quantiteRecommendée" rows="1" value="Affichage automatique" readonly>
+            <!--ajouter un affichage atumatique avec les données fournies par le vet-->
         </div>
         <div>
             <h3>Alimentation donnée :</h3>
-            <textarea class="form-control" id="alimentation" rows="2"></textarea>
+            <textarea class="form-control" id="alimentation" rows="6" placeholder="Saisissez ici l'alimentation donnée à l'animal de votre choix"></textarea>
         </div>
         <div>
             <h3>Quantité :</h3>
-            <textarea class="form-control" id="quantite" rows="1"></textarea>
+            <textarea class="form-control" id="quantite" rows="2" placeholder="Saisissez la quantité d'alimentation donnée et si elle varie de la quantité recommandée justifier"></textarea>
         </div>
         <div>
             <h3 class="date-heure">Date et Heure :
@@ -50,7 +50,7 @@
             </h3>
         </div>
         <div class="btn-soumettre-rapport">
-            <button class="btn btn-secondary">Soumettre</button>
+            <button class="btn btn-secondary">SOUMETTRE</button>
             <!--ajouter une alerte de confirmation d'envoie de rapport-->
             <!--ajouter une alerte de succès ou échec-->
         </div>
@@ -65,8 +65,8 @@
                     <!--replacer cet espace par un affichage automatique des avis en carrousel-->
                 </div>
                 <div class="btn-valider-avis row">
-                    <button class="btn btn-secondary btn-valider">Valider</button>
-                    <button class="btn btn-danger btn-refuser">Refuser</button>
+                    <button class="btn btn-secondary btn-valider">VALIDER</button>
+                    <button class="btn btn-danger btn-refuser">REFUSER</button>
                     <!--ajouter une alerte de confirmation de validation ou refus d'avis-->
                     <!--ajouter une alerte de succès ou échec-->
                 </div>
@@ -85,10 +85,10 @@
                 </h3>
                 <div>
                     <h3>Nouvelle description :</h3>
-                    <textarea class="form-control" id="nouvelleDescription" rows="6"></textarea>
+                    <textarea class="form-control" id="nouvelleDescription" rows="6" placeholder="Saisissez ici la nouvelle description du service sélectionné"></textarea>
                 </div>
                 <div class="btn-soumettre-modif-service">
-                    <button class="btn btn-secondary">Soumettre</button>
+                    <button class="btn btn-secondary">SOUMETTRE</button>
                     <!--ajouter une alerte de confirmation d'envoie de rapport-->
                     <!--ajouter une alerte de succès ou échec-->
                 </div>

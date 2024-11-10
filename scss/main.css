@@ -12043,7 +12043,7 @@ p {
 
 button {
   border-radius: 10px;
-  font-family: "Raleway", sans-serif;
+  font-family: "LEMON MILK", sans-serif;
   border: 1;
   font-weight: bold;
 }
@@ -12248,9 +12248,6 @@ footer h4, footer .h4 {
 
 .card3-back button {
   background-color: #FFC72C;
-  border-radius: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
 }
 
 .card3-back button:hover {
@@ -12723,13 +12720,11 @@ footer h4, footer .h4 {
 
 .button-marais, .button-savane, .button-jungle {
   border-radius: 10px;
-  font-family: "Raleway", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   padding: 3px;
-  font-weight: bold;
   border: 1;
 }
 
@@ -12905,8 +12900,6 @@ footer h4, footer .h4 {
 
 .contact-submit button {
   border-radius: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
   margin: 10px;
 }
 
@@ -12948,8 +12941,6 @@ footer h4, footer .h4 {
 
 .connexion-submit button {
   border-radius: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
   margin: 10px;
 }
 
@@ -13053,6 +13044,10 @@ footer h4, footer .h4 {
   background-color: #A8D8EA;
 }
 
+.btn-valider:hover {
+  background-color: #F28A30;
+}
+
 .validation-avis {
   display: flex;
   width: 100%;
@@ -13073,7 +13068,7 @@ footer h4, footer .h4 {
 .modification-services {
   display: flex;
   width: 100%;
-  background-color: #A8D8EA;
+  background-color: #F2CFC2;
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -13098,4 +13093,21 @@ footer h4, footer .h4 {
   margin: 10px auto;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+}
+
+input[type=text] {
+  font-family: "raleway", sans-serif;
+  font-style: italic;
+}
+
+.affichage-alimentation, .affichage-quantité {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.affichage-alimentation label, .affichage-quantité label {
+  font-family: "LEMON MILK", sans-serif;
+  font-size: 1rem;
+  margin: 5px;
 }/*# sourceMappingURL=main.css.map */
