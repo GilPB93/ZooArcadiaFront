@@ -11,7 +11,6 @@ html, body {
   align-content: center;
   align-items: center;
 }
-
 header {
   font-size: 1em;
   font-family: $font-family-title;
@@ -23,7 +22,6 @@ header {
   margin: 0 auto;
   align-content: center;
 }
-
 footer.footer {
   height: 77px;
   font-size: 1em;
@@ -37,17 +35,14 @@ footer.footer {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-
 .footer-content {
   text-align: center;
 } 
-
 .main-content {
   flex: 1; /* Take up remaining space between header and footer */
   display: flex;
   justify-content: center; /* Center horizontally */
 }
-
 h1{
   font-family: $font-family-title;
   font-size: 1.7rem;
@@ -65,25 +60,24 @@ h3{
 h4 {
   font-family: $font-family-title;
   font-size: 0.8rem;
-  margin: 5px;
+  margin: 10px;
 }
 p {
   font-family: $font-family-text;
   font-size: 0.95rem;
 }
-
 button{
   border-radius: 10px;
   font-family: 'LEMON MILK', sans-serif;
-  border: 1;
   font-weight: bold;
+  padding: 5px;
 }
-
 footer h4{
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
+//PAGE 404
 .error404{
   display: flex;
   flex-direction: column;
@@ -110,17 +104,15 @@ footer h4{
   background-color: $accent;
 }
 
-
+//NAVBAR
 .navbar .container-fluid {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-
 .navbar{
   padding-bottom: 0;
 }
-
 .navbar-brand {
   margin-right: auto; /* Pushes the brand to the left */
   margin-left: 10px;
@@ -129,14 +121,12 @@ footer h4{
   padding: 0;
   border-radius: 10px;
 }
-
 .navbar-nav {
   display: flex;
   justify-content: center; /* Center horizontally */
   flex-grow: 1; /* Allow the nav items to take up remaining space */
   padding-right: 60px;
 }
-
 .nav-item {
   margin: 0 10px; /* Optional: Add some spacing between nav items */
 }
@@ -158,8 +148,8 @@ footer h4{
   align-content: center;
 }
 
-
-// CARD 1
+//PAGE ACCUEIL
+//CARD 1
 .card1 {
   width: 627px;
   height: 280px;
@@ -194,7 +184,7 @@ footer h4{
   font-weight: 500;
 }
 
-// CARD 2
+//CARD 2
 .card2 {
   position: relative;
   width: 150px;
@@ -211,7 +201,7 @@ footer h4{
   transform: scale(1.05); /* Zoom in slightly on hover */
 }
 
-// CARD 3
+//CARD 3
 .card3 {
   position: relative;
   margin: 3px; 
@@ -272,7 +262,7 @@ footer h4{
   background-color: $accent;
 }
 
-// CARD 4
+//CARD 4
 .card4{
   padding: 0;
   margin: 3px;
@@ -301,7 +291,7 @@ footer h4{
   transform: scale(1.05); /* Zoom in slightly on hover */
 }
 
-// CARD 5
+//CARD 5
 .card5 {
   position: relative;
   width: 150px;
@@ -317,6 +307,7 @@ footer h4{
 .card5:hover {
   transform: scale(1.05); /* Zoom in slightly on hover */
 }
+
 // CARD 6
 .card6 {
   position: relative;
@@ -379,6 +370,7 @@ footer h4{
 .card6-back button:hover {
   background-color: $accent;
 }
+
 // CARD 7
 .card7 {
   position: relative;
@@ -395,6 +387,7 @@ footer h4{
 .card7:hover {
   transform: scale(1.05); /* Zoom in slightly on hover */
 }
+
 // CARD 8
 .card8 {
   position: relative;
@@ -452,6 +445,7 @@ footer h4{
 .card10-img-a:hover, .card10-img-b:hover {
   transform: scale(1.05); /* Zoom in slightly on hover */
 }
+
 // CARD 11 
 .card11 {
   position: relative; 
@@ -464,13 +458,14 @@ footer h4{
   background-color: $neutral1;
 }
 
+
+//PAGE SERVICES
 .bigtitle {
   width: 100vw; /* Full width of the viewport */
   height: 210px;
   top: 0;
   margin: 3px;
   position: relative;
-
 }
 .bigtitle-img-services {
   width: 100%; /* Cover the full width of .bigtitle */
@@ -481,7 +476,6 @@ footer h4{
   padding: 0;
   position: absolute;
 }
-
 .bigtitle-content {
   position: relative;
   top: 0;
@@ -493,8 +487,6 @@ footer h4{
   max-width: 1440px;
   margin: auto;
 }
-
-
 .card-services, .card-habitats{
   display: flex;
   justify-content: center;
@@ -530,7 +522,6 @@ footer h4{
   width: 310px;
   margin: 5px auto;
 }
-
 .card-visite{
   position: relative;
   margin: 10px;
@@ -558,7 +549,6 @@ footer h4{
   width: 310px;
   margin: 5px auto;
 }
-
 .card-train{
   position: relative;
   margin: 10px;
@@ -586,11 +576,9 @@ footer h4{
   width: 310px;
   margin: 5px auto;
 }
-
 .card-restaurant:hover, .card-train:hover, .card-visite:hover {
   transform: scale(1.05); /* Zoom in slightly on hover */
 }
-
 .info-services{
   display: flex;
   justify-content: center;
@@ -610,6 +598,7 @@ footer h4{
   font-style: italic;
 }
 
+//PAGE HABITATS
 .bigtitle-img-habitats {
   width: 100%; /* Cover the full width of .bigtitle */
   height: 100%; /* Cover the full height of .bigtitle */
@@ -619,7 +608,6 @@ footer h4{
   padding: 0;
   position: absolute;
 }
-
 .card-marais{
   position: relative;
   margin: 10px;
@@ -647,7 +635,6 @@ footer h4{
   width: 350px;
   margin: 3px auto;
 }
-
 .card-savane{
   position: relative;
   margin: 10px;
@@ -675,7 +662,6 @@ footer h4{
   width: 350px;
   margin: 3px auto;
 }
-
 .card-jungle{
   position: relative;
   margin: 10px;
@@ -703,11 +689,9 @@ footer h4{
   width: 350px;
   margin: 3px auto;
 }
-
 .card-marais:hover, .card-savane:hover, .card-jungle:hover {
   transform: scale(1.05); /* Zoom in slightly on hover */
 }
-
 .button-marais, .button-savane, .button-jungle{
   border-radius: 10px;
   display: flex;
@@ -717,12 +701,11 @@ footer h4{
   padding: 3px;
   border: 1;
 }
-
 .button-marais:hover, .button-savane:hover, .button-jungle:hover {
   background-color: $accent;
 }
 
-
+//BIGTITLES MARAIS, SAVANE, JUNGLE
 .bigtitle-img-marais {
   width: 100%; /* Cover the full width of .bigtitle */
   height: 100%; /* Cover the full height of .bigtitle */
@@ -732,7 +715,6 @@ footer h4{
   padding: 0;
   position: absolute;
 }
-
 .bigtitle-img-savane {
   width: 100%; /* Cover the full width of .bigtitle */
   height: 100%; /* Cover the full height of .bigtitle */
@@ -742,7 +724,6 @@ footer h4{
   padding: 0;
   position: absolute;
 }
-
 .bigtitle-img-jungle {
   width: 100%; /* Cover the full width of .bigtitle */
   height: 100%; /* Cover the full height of .bigtitle */
@@ -753,6 +734,7 @@ footer h4{
   position: absolute;
 }
 
+//PAGES HABITATS ANIMAUX
 .marais-description, .savane-description, .jungle-description{
   display: flex;
   justify-content: center;
@@ -762,14 +744,12 @@ footer h4{
   padding: 10px;
   max-width: 1200px;
 }
-
 .marais.marais-description p, .savane.savane-description p, .jungle.jungle-description p{
   width: 100%;
   height: auto;
   align-content: center;
   justify-content: center;
 }
-
 .marais-content, .savane-content, .jungle-content{
   display: flex;
   justify-content: center;
@@ -787,8 +767,6 @@ footer h4{
   margin: 0 auto;
   width: 100%;
 }
-
-
 .galerie-card{
   height: 300px;
   width: 400px;
@@ -829,7 +807,6 @@ footer h4{
     justify-content: center;
   }
 }
-
 .galerie-img{
   height: 100%;
   width: 100%;
@@ -838,19 +815,18 @@ footer h4{
   background-size: cover;
   background-position: center;
 }
-
 .btn-animal:hover{
   background-color: $accent;
 }
-
 .modal-body p {
   text-align: justify;
 }
-
 .modal-body h3 {
   font-style: italic;
 }
 
+
+//PAGE CONTACT
 .bigtitle-img-contact {
   width: 100%; /* Cover the full width of .bigtitle */
   height: 100%; /* Cover the full height of .bigtitle */
@@ -860,8 +836,6 @@ footer h4{
   padding: 0;
   position: absolute;
 }
-
-
 .contact-form, .connexion-form {
   position: relative;
   top: 0;
@@ -875,16 +849,13 @@ footer h4{
   width: 100%;
   margin: auto;
 }
-
 .contact-name,.contact-title, .contact-email, .contact-message {
   margin: 10px;
 }
-
 .form-label {
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
-
 .contact-submit{
   display: flex;
   justify-content: center;
@@ -899,7 +870,6 @@ footer h4{
 .contact-submit button:hover {
   background-color: $accent;
 }
-
 .bigtitle-text {
   position: relative;
   top: 0;
@@ -914,6 +884,7 @@ footer h4{
   width: 100%;
 }
 
+//PAGE CONNEXION
 .bigtitle-img-connexion {
   width: 100%; /* Cover the full width of .bigtitle */
   height: 100%; /* Cover the full height of .bigtitle */
@@ -937,7 +908,6 @@ footer h4{
 .connexion-submit button:hover {
   background-color: $accent;
 }
-
 .connexion-email {
   margin: 10px;
 }
@@ -945,7 +915,6 @@ footer h4{
   margin: 10px;
   margin-top: 40px;
 }
-
 .connexion-form{
   height: 360px;
   display: flex;
@@ -953,6 +922,7 @@ footer h4{
   justify-content: space-evenly
 }
 
+//BIGTITLES ADMIN, EMPLOYE, VETERINAIRE
 .bigtitle-img-vet {
   width: 100%; /* Cover the full width of .bigtitle */
   height: 100%; /* Cover the full height of .bigtitle */
@@ -981,11 +951,16 @@ footer h4{
   position: absolute;
 }
 
-.employe-content, .vet-content, .admin-content {
+//PAGE ESPACE EMPLOYE
+.employe-content {
   display: flex;
   justify-content: center;
   align-content: center;
   margin: 10px auto;
+  align-items: flex-start;
+}
+.employe-content h3 {
+  padding-top: 5px;
 }
 .employe-rapport, .employe-avis-service {
   position: relative;
@@ -999,14 +974,11 @@ footer h4{
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  padding: 10px;
   margin: 5px;
 }
 .employe-rapport{
   background-color: $neutral2;
-}
-.employe-content h3 {
-  padding: 5px;
+  padding: 10px;
 }
 .form-select-race, .form-select-animal, .form-select-service {
   margin: 0;
@@ -1021,8 +993,8 @@ footer h4{
   align-content: center;
   margin: 10px auto;
 }
-.btn-soumettre-rapport button, .btn-soumettre-modif-service button {
-  font-family: 'Raleway', sans-serif;
+.btn-soumettre-rapport button, .validation-avis button, .modification-services button {
+  font-family: $font-family-title;
   font-weight: bold;
 }
 .btn-soumettre-rapport button:hover, .btn-soumettre-modif-service button:hover {
@@ -1070,11 +1042,9 @@ footer h4{
   align-items: center;  
   align-content: center;
   margin: 10px auto;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
 }
 input[type="text"] {
-  font-family: 'raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: italic;
 }
 
@@ -1089,6 +1059,17 @@ input[type="text"] {
   margin: 5px;
 }
 
+//PAGE ESPACE VETERINAIRE
+.vet-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  align-items: flex-start;
+}
+.vet-content h3 {
+  padding-top: 5px;
+}
 .vet-compte-rendu, .vet-rapport-ali {
   position: relative;
   display: flex;
@@ -1102,9 +1083,6 @@ input[type="text"] {
   height: 100%;
   border-radius: 10px;
   padding: 10px;
-}
-.vet-content h3 {
-  padding: 5px;
 }
 .vet-compte-rendu {
   background-color: $neutral1;
@@ -1120,7 +1098,7 @@ input[type="text"] {
   align-items: center;  
   align-content: center;
   margin: 10px auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: $font-family-title;
   font-weight: bold;
 }
 .vet-compte-rendu button:hover {
@@ -1129,7 +1107,9 @@ input[type="text"] {
 .vet-rapport-ali button:hover {
   background-color: $neutral3;
 }
-.form-select-race, .form-select-name, .form-select-service, .form-select-date, .form-select-etat-habitat, .form-select-rapport-date {
+.form-select-race, .form-select-name, .form-select-service, 
+.form-select-date, .form-select-etat-habitat, .form-select-rapport-date,
+.form-select-poste, .form-control {
   font-family: 'raleway', sans-serif;
   border-radius: 10px;
   padding: 5px;
@@ -1138,4 +1118,301 @@ input[type="text"] {
   font-family: $font-family-title;
   font-size: 1rem;
   margin: 5px;
+}
+
+//PAGE ESPACE ADMIN
+.admin-content1, .admin-content2, .admin-content3, .admin-content4 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  align-items: flex-start;
+  width: 100%;
+}
+.admin-content1 h3, .admin-content2 h3, .admin-content3 h3, .admin-content4 h3{
+padding-top: 5px;
+}
+.admin-content-dash-horaires {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 10px auto;
+  width: 100%;
+}
+.dashboard, .crud-horaires, .crud-comptes, .compte-rendu-vet-empl, .crud-habitats, .crud-services, .crud-animaux  {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  align-content: center;
+  max-width: 705px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 5px;
+}
+.dashboard {
+  background-color: $neutral1;
+  height: 239px;
+}
+.crud-horaires {
+  background-color: $neutral2;
+}
+.dashboard label {
+  font-family: $font-family-title;
+  font-size: 1.4rem;
+  margin: 5px;
+}
+.crud-horaires h2 {
+  margin: 5px;
+}
+.btn-valider-horaires {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-valider-horaires button {
+  font-family: $font-family-title;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn-valider-horaires button:hover {
+  background-color: $neutral3;
+}
+.admin-content-comptes-rapports {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 10px auto;
+  width: 100%;
+}
+.crud-comptes {
+  background-color: $neutral3;
+  border-radius: 10px;
+}
+.compte-rendu-vet-empl {
+  background-color: $neutral4;
+  border-radius: 10px;
+  height: 505px;
+}
+.crud-comptes label, .compte-rendu-vet-empl label {
+  font-family: $font-family-title;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 5px;
+}
+.btn-modifier-compte button {
+  background-color: $accent;
+}
+.btn-creer-compte button:hover {
+  background-color: $accent;
+}
+.btn-modifier-compte button:hover {
+  background-color: $neutral1;
+}
+.btn-creer-compte button, .btn-modifier-compte button, .btn-supprimer-compte button, .btn-chercher-compte-rendu button {
+  border-radius: 10px;
+  font-family: $font-family-title;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  border: 0;
+}
+.btn-crud-compte {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.btn-chercher-compte-rendu button:hover {
+  background-color: $neutral1;
+}
+.btn-chercher-compte-rendu button {
+  background-color: $accent;
+} 
+.crud-habitats {
+  background-color: $neutral2;
+}
+.crud-services {
+  background-color: $neutral1;
+}
+.select-image-habitat label {
+  font-family: $font-family-title;
+  font-size: 1rem;
+  margin: 5px;
+}
+.selection-animaux {
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.dropdown-selection-animaux label {
+  font-family: $font-family-title;
+  font-size: 1rem;
+  margin: 5px;
+}
+.dropdown-selection-animaux {
+  display: flex;
+  align-items: center;
+  .dropdown-menu {
+    max-height: 200px; // Limite la hauteur pour éviter un menu trop grand
+    width: 200px;
+    margin: 5px;
+    background-color: $base-comment;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  }
+}
+.dropdown-toggle {
+  background-color: $base-comment;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+.dropdown-toggle:hover {
+  background-color: $base-comment;
+}
+.btn-modifier-habitat button {
+  background-color: $accent;
+}
+.btn-creer-habitat button:hover {
+  background-color: $accent;
+}
+.btn-modifier-habitat button:hover {
+  background-color: $neutral1;
+}
+.btn-creer-habitat button, .btn-modifier-habitat button, .btn-supprimer-habitat button, .btn-chercher-compte-rendu button {
+  border-radius: 10px;
+  font-family: $font-family-title;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  border: 0;
+}
+.btn-crud-habitats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.admin-content-habitats-services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 10px auto;
+  width: 100%;
+}
+.select-image-service label {
+  font-family: $font-family-title;
+  font-size: 1rem;
+  margin: 5px;
+}
+.btn-modifier-service button {
+  background-color: $accent;
+}
+.btn-creer-service button:hover {
+  background-color: $accent;
+}
+.btn-modifier-service button:hover {
+  background-color: $neutral1;
+}
+.btn-creer-service button, .btn-modifier-service button, .btn-supprimer-service button {
+  border-radius: 10px;
+  font-family: $font-family-title;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  border: 0;
+}
+.btn-crud-services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+
+
+.crud-animaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  padding: 5px;
+  max-width: 1430px;
+  width: 100%;
+  background-color: $neutral4;
+}
+.form-control {
+  padding: 5px;
+  margin: 5px auto;
+  border-radius: 10px;
+  width: 100%;
+}
+.form-select-habitat {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 10px;
+}
+.select-image-animal label {
+  font-family: $font-family-title;
+  font-size: 1rem;
+  margin: 5px;
+}
+.btn-modifier-animal button {
+  background-color: $accent;
+}
+.btn-creer-animal button:hover {
+  background-color: $accent;
+}
+.btn-modifier-animal button:hover {
+  background-color: $neutral1;
+}
+.btn-creer-animal button, .btn-modifier-animal button, .btn-supprimer-animal button {
+  border-radius: 10px;
+  font-family: $font-family-title;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  border: 0;
+}
+.btn-crud-animaux {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
 }
