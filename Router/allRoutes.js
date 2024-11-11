@@ -6,13 +6,13 @@ export const allRoutes = [
     new Route("/services", "Services", "/pages/services.html"),
     new Route("/habitats", "Habitats", "/pages/habitats.html"),
     new Route("/contact", "Contact", "/pages/contact.html"),
-    new Route("/connexion", "Connexion", "/pages/connexion/connexion.html", "/js/connexion/connexion.js"),
+    new Route("/connexion", "Connexion", "/pages/auth/connexion.html"),
     new Route("/marais", "Marais", "/pages/habitat/marais.html"),
     new Route("/savane", "Savane", "/pages/habitat/savane.html"),
     new Route("/jungle", "Jungle", "/pages/habitat/jungle.html"),
-    new Route("/veterinaire", "Espace vétérinaire", "/pages/connexion/vet.html"),
-    new Route("/administrateur", "Espace administrateur", "/pages/connexion/admin.html"),
-    new Route("/employe", "Espace employé", "/pages/connexion/employe.html"),
+    new Route("/veterinaire", "Espace vétérinaire", "/pages/auth/vet.html"),
+    new Route("/administrateur", "Espace administrateur", "/pages/auth/admin.html"),
+    new Route("/employe", "Espace employé", "/pages/auth/employe.html"),
     
 
 ];
