@@ -32,10 +32,22 @@
                   <li class="nav-item"> 
                     <a class="nav-link text-white" href="/contact">Contact</a>
                   </li>
-                  <li class="nav-item" > 
-                    <button type="button" class="nav-link text-white">Connexion</button>
+                  <li class="nav-item" data-show="disconnected"> 
+                    <a class="nav-link text-white" href="/connexion">Connexion</a>
                   </li>
-                
+                  <li class="nav-item" data-show="connected"> 
+                    <a class="nav-link text-white" href="/administrateur">Mon espace</a>
+                  </li>
+                  <li class="nav-item" data-show="connected"> 
+                    <a class="nav-link text-white" href="/veterinaire">Mon espace</a>
+                  </li>
+                  <li class="nav-item" data-show="connected"> 
+                    <a class="nav-link text-white" href="/employe">Mon espace</a>
+                  </li>
+                  <li class="nav-item" data-show="connected"> 
+                    <button class="nav-link text-white" id="signout-btn">Déconnexion</button>
+                  </li>
+
                 </ul>
               </div>
             </div>
@@ -70,9 +82,10 @@
         </div>
     </footer>    
 
-
+    <script src="/js/script.js"></script>
     <script type="module" src="Router/Router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -11,14 +11,20 @@
     </div>
 </section>
 
-<section class="connexion-form row">
+<section class="connexion-form">
     <div class="connexion-email">
         <label for="EmailInput" class="form-label text-white">Username*</label>
         <input type="email" class="form-control" id="EmailInput" placeholder="name@example.com" name="Email">
+        <div class="invalid-feedback">
+            Le mail et le mot de passe que vous saisissez ne correspondent pas!
+        </div>
     </div>
     <div class="connexion-password">
         <label for="PasswordInput" class="form-label text-white">Mot de passe*</label>
         <input type="password" class="form-control" id="PasswordInput" name="Password">
+        <div class="invalid-feedback">
+            Le mail et le mot de passe que vous saisissez ne correspondent pas!
+        </div>
     </div>
     <div class="connexion-required">
         <p class="text-white">*Champs obligatoires</p>
@@ -26,4 +32,6 @@
     <div class="connexion-submit">
         <button type="button" class="btn btn-secondary" id="btnSignin">Connexion</button>
     </div>
+ 
+
 </section>
